@@ -1,0 +1,7 @@
+{
+  "name": "github-actions-example",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Testes executados com sucesso!\" && exit 0"
+  }
+}
