@@ -1,0 +1,33 @@
+name: Exploradores DevOps - CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: 🚀 Build e Teste
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: 📂 Listar arquivos no repositório
+        run: ls -la
+
+      - name: ✅ Verificação de sintaxe básica (simulada)
+        run: echo "Verificando sintaxe... (simulado)"
+
+      - name: 🛠️ Simulação de build
+        run: echo "Compilando projeto... (simulado)"
+
+      - name: 🧪 Simulação de testes
+        run: |
+          echo "Rodando testes fictícios..."
+          echo "Todos os testes passaram ✅"
+
+      - name: ✅ CI Finalizado com sucesso
+        run: echo "Pipeline finalizado com sucesso 🎉"
